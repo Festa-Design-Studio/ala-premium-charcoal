@@ -1,61 +1,204 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Àlá Premium Charcoal Website
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+![Àlá Premium Charcoal Logo](public/img/logo-ala-horizontal.svg)
 
-## About Laravel
+## Project Overview
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Àlá Premium Charcoal is Nigeria's premier export-grade hardwood charcoal supplier, specializing in wholesale distribution. This repository contains the Laravel implementation of the Àlá Premium Charcoal website, built using the established atomic design system.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Project Implementation Rules
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### 1. Project Reference
+- All implementation must reference the design system and components from `@ala-premium-charcoal-working-doc`
+- This is the source of truth for:
+  - UI Components
+  - Design System
+  - Brand Assets
+  - Content Structure
+  - Typography
+  - Color Palette
 
-## Learning Laravel
+### 2. Technology Stack
+- Backend: Laravel (Latest LTS version)
+- Template Engine: Blade
+- CSS Framework: Tailwind CSS
+- No Frontend Frameworks (Vue.js, React, etc.)
+- Component Architecture: Laravel Blade Components + Tailwind CSS
+- Database: MySQL/PostgreSQL
+- Asset Compilation: Vite
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### 3. Development Guidelines
+- All development must follow Atomic Design Methodology
+- Components must be implemented as Blade components with Tailwind CSS
+- Reference original HTML/CSS from working doc for component styling
+- Maintain folder structure that mirrors atomic design system
+- Always work in the project root directory
+- Update documentation with each significant change
+- Use Blade Components with Tailwind props for reusability
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+### 4. Repository Structure
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+```bash
+ala-premium-charcoal/
+├── app/
+│   ├── Http/
+│   │   ├── Controllers/
+│   │   │   ├── Admin/
+│   │   │   └── Frontend/
+│   │   └── Middleware/
+│   ├── Models/
+│   └── View/
+│       └── Components/
+│           ├── Atoms/
+│           ├── Molecules/
+│           ├── Organisms/
+│           └── Templates/
+├── resources/
+│   ├── views/
+│   │   ├── components/
+│   │   │   ├── atoms/
+│   │   │   ├── molecules/
+│   │   │   ├── organisms/
+│   │   │   └── templates/
+│   │   ├── layouts/
+│   │   ├── pages/
+│   │   └── admin/
+│   ├── css/
+│   └── js/
+└── public/
+    └── img/
+```
 
-## Laravel Sponsors
+### 5. Implementation Process
+1. Always check working doc before implementing features
+2. Follow atomic design hierarchy for component development
+3. Update documentation with all significant changes
+4. Maintain documentation of implemented components
+5. Test components in isolation before integration
+6. Follow Laravel and Tailwind best practices
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### 6. Current Project Status
+- [x] Initial project setup
+- [x] Basic folder structure
+- [x] Tailwind configuration
+- [x] Base components implementation
+- [x] Page templates
+- [x] Admin CRUD system
+- [x] Content management system
+- [ ] Testing implementation
+- [ ] Deployment preparation
 
-### Premium Partners
+## Design System Implementation
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+### 1. Atomic Components
+- **Atoms**: Base components (buttons, typography, form elements)
+- **Molecules**: Compound components (cards, breadcrumbs)
+- **Organisms**: Complex components (navigation, footer)
+- **Templates**: Page layouts and structures
 
-## Contributing
+### 2. Color System
+Implemented through Tailwind CSS custom colors:
+- Charcoal (Primary)
+- Palm (Accent)
+- Ember (CTA)
+- Clay (Background)
+- Ash (UI Elements)
+- Kola (Complementary)
+- Savanna (Highlight)
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### 3. Typography
+- Headings: Nohemi (font-nohemi)
+- Body: Poppins (font-poppins)
 
-## Code of Conduct
+## Getting Started
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### Prerequisites
+- PHP 8.1 or higher
+- Composer
+- Node.js & NPM
+- MySQL/PostgreSQL
 
-## Security Vulnerabilities
+### Installation
+```bash
+# Clone the repository
+git clone https://github.com/Festa-Design-Studio/ala-premium-charcoal.git
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+# Navigate to project directory
+cd ala-premium-charcoal
+
+# Install PHP dependencies
+composer install
+
+# Install Node.js dependencies
+npm install
+
+# Copy environment file
+cp .env.example .env
+
+# Generate application key
+php artisan key:generate
+
+# Set up database and run migrations
+php artisan migrate
+
+# Build assets
+npm run dev
+```
+
+### Development
+```bash
+# Start the development server
+php artisan serve
+
+# Watch for asset changes
+npm run dev
+```
+
+## Project Progress Updates
+
+### Implementation Checklist
+1. [x] Project initialization
+   - [x] Repository setup
+   - [x] Development environment configuration
+   - [x] Dependencies installation
+2. [x] Component library setup
+   - [x] Atomic design structure
+   - [x] Base components
+   - [x] Component documentation
+3. [x] Database schema design
+   - [x] Migrations
+   - [x] Models
+   - [x] Relationships
+4. [x] Authentication system
+   - [x] User management
+   - [x] Role-based access
+5. [x] Admin dashboard
+   - [x] CRUD operations
+   - [x] Content management
+   - [x] Analytics and reporting
+6. [x] Frontend pages
+   - [x] Templates
+   - [x] Layouts
+   - [x] Components integration
+7. [ ] Testing
+   - [ ] Unit tests
+   - [ ] Feature tests
+   - [ ] Browser tests
+8. [ ] Deployment preparation
+   - [ ] Environment configuration
+   - [ ] Performance optimization
+   - [ ] Security measures
+
+### Latest Updates
+- Completed initial project setup and configuration
+- Implemented navigation header with mobile responsiveness
+- Set up atomic design component structure
+- Integrated Tailwind CSS with custom configuration
+- Added Alpine.js for interactive components
+- Implemented mobile menu toggle functionality
+- Created base layout with header and footer
+- Set up route structure for main pages
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+© 2025 Àlá Premium Charcoal. All rights reserved.
