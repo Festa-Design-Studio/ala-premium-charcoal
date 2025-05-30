@@ -10,21 +10,14 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+        <!-- Alpine.js -->
+        <script defer src="https://unpkg.com/alpinejs@3.13.7/dist/cdn.min.js"></script>
+
         <!-- Styles -->
         @vite(['resources/css/app.css'])
 
         <!-- Scripts -->
         @vite(['resources/js/app.js'])
-
-        <!-- Alpine.js -->
-        <script defer src="https://unpkg.com/alpinejs@3.13.7/dist/cdn.min.js"></script>
-        <script>
-            document.addEventListener('alpine:init', () => {
-                Alpine.store('navigation', {
-                    mobileMenuOpen: false
-                });
-            });
-        </script>
     </head>
     <body class="font-poppins antialiased bg-clay-50">
         <div class="min-h-screen flex flex-col">

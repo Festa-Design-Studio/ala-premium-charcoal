@@ -53,7 +53,7 @@
                         <svg class="h-5 w-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                         </svg>
-                        info@alapremiumcharcoal.com
+                        info@alacharcoal.com
                     </li>
                     <li class="flex items-center text-clay-200">
                         <svg class="h-5 w-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -68,7 +68,7 @@
             <div>
                 <h3 class="text-clay-50 font-nohemi text-lg font-semibold mb-4">Newsletter</h3>
                 <p class="text-clay-200 mb-4">Subscribe to our newsletter for updates and exclusive offers.</p>
-                <form class="flex">
+                <form class="flex flex-col gap-2">
                     <input type="email" placeholder="Enter your email" class="flex-1 bg-charcoal-700 text-clay-50 px-4 py-2 rounded-l-md focus:outline-none focus:ring-2 focus:ring-palm-500">
                     <button type="submit" class="bg-palm-500 hover:bg-palm-600 text-clay-50 px-4 py-2 rounded-r-md transition-all duration-300">Subscribe</button>
                 </form>
