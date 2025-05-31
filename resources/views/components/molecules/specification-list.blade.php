@@ -1,20 +1,26 @@
-<?php
-$specifications = $attributes->get('specifications', []);
-?>
+@props(['specifications' => []])
 
-<div class="overflow-hidden border border-ash-200 rounded-lg">
-    <table class="min-w-full divide-y divide-ash-200">
-        <thead class="bg-clay-50">
-            <tr>
-                <th class="px-6 py-3 text-left text-xs font-medium text-charcoal-500 uppercase tracking-wider">Specification</th>
-                <th class="px-6 py-3 text-left text-xs font-medium text-charcoal-500 uppercase tracking-wider">Value</th>
+<div class="bg-white rounded-lg shadow-md overflow-hidden">
+    <table class="min-w-full">
+        <thead>
+            <tr class="bg-palm-600 text-clay-50">
+                <th class="py-3 px-4 text-left font-nohemi font-bold">Specification</th>
+                <th class="py-3 px-4 text-left font-nohemi font-bold">Value</th>
+                <th class="py-3 px-4 text-left font-nohemi font-bold">Notes</th>
             </tr>
         </thead>
-        <tbody class="bg-white divide-y divide-ash-200">
-            @foreach($specifications as $label => $value)
-                <tr>
-                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-charcoal-700">{{ $label }}</td>
-                    <td class="px-6 py-4 whitespace-nowrap text-sm text-charcoal-600">{{ $value }}</td>
+        <tbody class="divide-y divide-clay-100">
+            @foreach($specifications as $spec)
+                <tr class="hover:bg-clay-50">
+                    <td class="py-3 px-4 font-poppins font-medium text-charcoal-700">{{ $spec['label'] }}</td>
+                    <td class="py-3 px-4 font-poppins text-charcoal-600">
+                        @if(is_array($spec['value']))
+                            {{ implode(', ', $spec['value']) }}
+                        @else
+                            {{ $spec['value'] }}
+                        @endif
+                    </td>
+                    <td class="py-3 px-4 font-poppins text-small text-ash-600">{{ $spec['notes'] ?? '' }}</td>
                 </tr>
             @endforeach
         </tbody>

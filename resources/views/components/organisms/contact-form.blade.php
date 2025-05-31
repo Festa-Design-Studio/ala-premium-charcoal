@@ -1,4 +1,4 @@
-<div class="max-w-2xl mx-auto bg-clay-50 rounded-xl p-8 shadow-md">
+<div class="max-w-2xl mx-auto bg-clay-200/50 border border-ash-200 rounded-xl p-8 shadow-md">
     <div class="mb-6">
         <h3 class="font-nohemi font-bold text-h4-desktop text-charcoal-700 mb-2">Get in Touch</h3>
         <p class="font-poppins text-body text-charcoal-600">

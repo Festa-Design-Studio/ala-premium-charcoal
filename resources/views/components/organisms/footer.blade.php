@@ -3,7 +3,9 @@
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
             <!-- Company Info -->
             <div>
-                <img src="{{ asset('img/logo-ala-horizontal.svg') }}" alt="Àlá Premium Charcoal" class="h-8 mb-4">
+                <a href="{{ route('home') }}">
+                    <img src="{{ asset('img/logo-ala-horizontal.svg') }}" alt="Àlá Premium Charcoal" class="h-8 mb-4">
+                </a>
                 <p class="text-clay-200 mb-4">Nigeria's premier export-grade hardwood charcoal supplier, specializing in wholesale distribution.</p>
                 <div class="flex space-x-4">
                     <a href="#" class="text-clay-200 hover:text-palm-300 transition-all duration-300">
@@ -31,10 +33,9 @@
             <div>
                 <h3 class="text-clay-50 font-nohemi text-lg font-semibold mb-4">Quick Links</h3>
                 <ul class="space-y-2">
-                    <li><a href="/about" class="text-clay-200 hover:text-palm-300 transition-all duration-300">About Us</a></li>
-                    <li><a href="/products" class="text-clay-200 hover:text-palm-300 transition-all duration-300">Products</a></li>
-                    <li><a href="/sustainability" class="text-clay-200 hover:text-palm-300 transition-all duration-300">Sustainability</a></li>
-                    <li><a href="/contact" class="text-clay-200 hover:text-palm-300 transition-all duration-300">Contact</a></li>
+                    <li><a href="{{ route('about') }}" class="text-clay-200 hover:text-palm-300 transition-all duration-300">About Us</a></li>
+                    <li><a href="{{ route('products') }}" class="text-clay-200 hover:text-palm-300 transition-all duration-300">Products</a></li>
+                    <li><a href="{{ route('contact') }}" class="text-clay-200 hover:text-palm-300 transition-all duration-300">Contact</a></li>
                 </ul>
             </div>
 
@@ -53,13 +54,13 @@
                         <svg class="h-5 w-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                         </svg>
-                        info@alacharcoal.com
+                        <a href="mailto:info@alacharcoal.com" class="hover:text-palm-300 transition-all duration-300">info@alacharcoal.com</a>
                     </li>
                     <li class="flex items-center text-clay-200">
                         <svg class="h-5 w-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
                         </svg>
-                        +234 (0) 123 456 7890
+                        <a href="tel:+2340123456789" class="hover:text-palm-300 transition-all duration-300">+234 (0) 123 456 7890</a>
                     </li>
                 </ul>
             </div>
@@ -68,16 +69,29 @@
             <div>
                 <h3 class="text-clay-50 font-nohemi text-lg font-semibold mb-4">Newsletter</h3>
                 <p class="text-clay-200 mb-4">Subscribe to our newsletter for updates and exclusive offers.</p>
-                <form class="flex flex-col gap-2">
-                    <input type="email" placeholder="Enter your email" class="flex-1 bg-charcoal-700 text-clay-50 px-4 py-2 rounded-l-md focus:outline-none focus:ring-2 focus:ring-palm-500">
-                    <button type="submit" class="bg-palm-500 hover:bg-palm-600 text-clay-50 px-4 py-2 rounded-r-md transition-all duration-300">Subscribe</button>
+                <form action="{{ route('newsletter.subscribe') }}" method="POST" class="flex flex-col md:flex-row gap-2">
+                    @csrf
+                    <input type="email" name="email" placeholder="Enter your email" required class="w-full bg-charcoal-700 text-clay-50 px-4 py-2 rounded-md md:rounded-l-md focus:outline-none focus:ring-2 focus:ring-palm-500">
+                    <button type="submit" class="w-full md:w-auto bg-palm-500 hover:bg-palm-600 text-clay-50 px-4 py-2 rounded-md md:rounded-l-none md:rounded-r-md transition-all duration-300">Subscribe</button>
                 </form>
             </div>
         </div>
 
         <!-- Copyright -->
         <div class="mt-12 pt-8 border-t border-charcoal-700">
-            <p class="text-center text-clay-300">&copy; {{ date('Y') }} Àlá Premium Charcoal. All rights reserved.</p>
+            <div class="text-center space-y-2">
+                <p class="text-clay-300">&copy; {{ date('Y') }} Àlá Premium Charcoal. All rights reserved.</p>
+                <p class="text-clay-400 text-sm">
+                    Designed with purpose by 
+                    <a href="https://festa.design" 
+                       class="text-palm-300 hover:text-palm-400 transition-colors duration-300"
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                    >
+                        Festa Design Studio
+                    </a>
+                </p>
+            </div>
         </div>
     </div>
 </footer> 

@@ -70,7 +70,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="relative">
+                <div class="relative mx-auto">
                     <img src="{{ asset('img/quality-control.jpg') }}" alt="Quality Control Process" class="rounded-xl shadow-xl">
                     <div class="absolute -bottom-6 -right-6 bg-palm-500 text-clay-50 p-6 rounded-xl shadow-xl">
                         <p class="font-nohemi text-2xl font-bold">100%</p>
