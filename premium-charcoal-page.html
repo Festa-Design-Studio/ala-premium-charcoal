@@ -1,587 +1,852 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wholesale Charcoal | Àlá Premium Charcoal</title>
-    <link href="../../../dist/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body class="bg-clay-50">
-    <!-- Navigation Header (from organisms/navigation-header) -->
+    <link href="../../../dist/style.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-clay-50">
+    <!-- Navigation Header Component -->
     <header class="bg-clay-50 border-b border-ash-200 sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto">
-            <!-- Desktop Navigation -->
-            <nav class="hidden md:flex items-center justify-between py-4 px-6" aria-label="Main Navigation">
-                <!-- Logo -->
-                <div>
-                    <a href="home-page.html" class="block" aria-label="Àlá Premium Charcoal - Home">
-                        <img src="../../../img/logo-ala-horizontal.svg" alt="Àlá Premium Charcoal" class="h-10">
-                    </a>
-                </div>
-                
-                <!-- Menu Items -->
-                <div class="flex space-x-8" role="menubar" aria-label="Main Menu">
-                    <a href="#" class="font-poppins font-medium text-charcoal-600 hover:text-palm-500 transition-colors duration-300 border-b-2 border-palm-500" role="menuitem" aria-current="page">Home</a>
-                    <a href="#" class="font-poppins font-medium text-charcoal-600 hover:text-palm-500 transition-colors duration-300 border-b-2 border-transparent hover:border-palm-300" role="menuitem">Products</a>
-                    <a href="#" class="font-poppins font-medium text-charcoal-600 hover:text-palm-500 transition-colors duration-300 border-b-2 border-transparent hover:border-palm-300" role="menuitem">About Us</a>
-                    <a href="#" class="font-poppins font-medium text-charcoal-600 hover:text-palm-500 transition-colors duration-300 border-b-2 border-transparent hover:border-palm-300" role="menuitem">Contact</a>
-                </div>
-                
-                <!-- CTA Button -->
-                <div>
-                    <a href="premium-charcoal-page.html">
-                        <button 
-                        type="button" 
-                        class="bg-palm-500 hover:bg-palm-600 text-clay-50 py-2 px-4 rounded-md transition-all duration-300 font-poppins font-medium focus:outline-none focus:ring-2 focus:ring-palm-300 focus:ring-offset-2"
-                        aria-label="Request Quote"
-                    >
-                        Request Quote
-                    </button>
-                    </a>
-                </div>
-            </nav>
-            
-            <!-- Mobile Navigation -->
-            <nav class="md:hidden" aria-label="Mobile Navigation">
-                <div class="flex items-center justify-between py-4 px-4">
-                    <!-- Logo -->
-                    <div>
-                        <a href="#" class="block" aria-label="Àlá Premium Charcoal - Home">
-                            <img src="../../../img/logo-ala-horizontal.svg" alt="Àlá Premium Charcoal" class="h-8">
-                        </a>
-                    </div>
-                    
-                    <!-- Menu Button (would need JavaScript to toggle menu) -->
-                    <button 
-                        type="button" 
-                        class="text-charcoal-700 hover:text-palm-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-palm-500 p-2"
-                        aria-expanded="false"
-                        aria-controls="mobile-menu"
-                        aria-label="Open main menu"
-                    >
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                        </svg>
-                    </button>
-                </div>
-                
-                <!-- Mobile Menu (hidden by default, would be shown via JavaScript) -->
-                <div id="mobile-menu" class="hidden bg-clay-50 shadow-lg border-t border-ash-200">
-                    <div class="px-2 pt-2 pb-3 space-y-1" role="menu" aria-orientation="vertical" aria-label="Mobile menu">
-                        <a href="#" class="bg-palm-50 border-l-4 border-palm-500 text-palm-700 block pl-3 pr-4 py-2 font-poppins" role="menuitem" aria-current="page">Home</a>
-                        <a href="#" class="border-transparent text-charcoal-600 hover:bg-clay-100 hover:border-palm-300 border-l-4 block pl-3 pr-4 py-2 font-poppins" role="menuitem">Products</a>
-                        <a href="#" class="border-transparent text-charcoal-600 hover:bg-clay-100 hover:border-palm-300 border-l-4 block pl-3 pr-4 py-2 font-poppins" role="menuitem">About Us</a>
-                        <a href="#" class="border-transparent text-charcoal-600 hover:bg-clay-100 hover:border-palm-300 border-l-4 block pl-3 pr-4 py-2 font-poppins" role="menuitem">Contact</a>
-                    </div>
-                    <div class="px-4 py-4 border-t border-ash-200">
-                        <a href="premium-charcoal-page.html">
-                            <button 
-                            type="button" 
-                            class="w-full bg-palm-500 hover:bg-palm-600 text-clay-50 py-2 px-4 rounded-md transition-all duration-300 font-poppins font-medium focus:outline-none focus:ring-2 focus:ring-palm-300 focus:ring-offset-2"
-                            aria-label="Request Quote"
-                        >
-                            Request Quote
-                        </button>
-                        </a>
-                    </div>
-                </div>
-            </nav>
-        </div>
+      <div class="max-w-7xl mx-auto">
+        <!-- Desktop Navigation -->
+        <nav
+          class="hidden md:flex items-center justify-between py-4 px-6"
+          aria-label="Main Navigation"
+        >
+          <!-- Logo -->
+          <div>
+            <a
+              href="index.html"
+              class="block"
+              aria-label="Àlá Premium Charcoal - Home"
+            >
+              <img
+                src="../../../img/logo-ala-horizontal.svg"
+                alt="Àlá Premium Charcoal"
+                class="h-10"
+              />
+            </a>
+          </div>
+
+          <!-- Menu Items -->
+          <div class="flex space-x-8" role="menubar" aria-label="Main Menu">
+            <a
+              href="index.html"
+              class="font-poppins font-medium text-charcoal-600 hover:text-palm-500 transition-colors duration-300 border-b-2 border-palm-500"
+              role="menuitem"
+              aria-current="page"
+              >Home</a
+            >
+            <a
+              href="premium-charcoal-page.html"
+              class="font-poppins font-medium text-charcoal-600 hover:text-palm-500 transition-colors duration-300 border-b-2 border-transparent hover:border-palm-300"
+              role="menuitem"
+              >Products</a
+            >
+            <a
+              href="about.html"
+              class="font-poppins font-medium text-charcoal-600 hover:text-palm-500 transition-colors duration-300 border-b-2 border-transparent hover:border-palm-300"
+              role="menuitem"
+              >About Us</a
+            >
+            <a
+              href="contact.html"
+              class="font-poppins font-medium text-charcoal-600 hover:text-palm-500 transition-colors duration-300 border-b-2 border-transparent hover:border-palm-300"
+              role="menuitem"
+              >Contact</a
+            >
+          </div>
+
+          <!-- CTA Button -->
+          <div>
+            <a href="contact.html">
+              <button
+                type="button"
+                class="bg-palm-500 hover:bg-palm-600 text-clay-50 py-2 px-4 rounded-md transition-all duration-300 font-poppins font-medium focus:outline-none focus:ring-2 focus:ring-palm-300 focus:ring-offset-2"
+                aria-label="Request Quote"
+              >
+                Request Quote
+              </button>
+            </a>
+          </div>
+        </nav>
+
+        <!-- Mobile Navigation -->
+        <nav class="md:hidden" aria-label="Mobile Navigation">
+          <div class="flex items-center justify-between py-4 px-4">
+            <!-- Logo -->
+            <div>
+              <a
+                href="index.html"
+                class="block"
+                aria-label="Àlá Premium Charcoal - Home"
+              >
+                <img
+                  src="../../../img/logo-ala-horizontal.svg"
+                  alt="Àlá Premium Charcoal"
+                  class="h-8"
+                />
+              </a>
+            </div>
+
+            <!-- Menu Button (would need JavaScript to toggle menu) -->
+            <button
+              type="button"
+              class="text-charcoal-700 hover:text-palm-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-palm-500 p-2"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+              aria-label="Open main menu"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <!-- Mobile Menu (hidden by default, would be shown via JavaScript) -->
+          <div
+            id="mobile-menu"
+            class="hidden bg-clay-50 shadow-lg border-t border-ash-200"
+          >
+            <div
+              class="px-2 pt-2 pb-3 space-y-1"
+              role="menu"
+              aria-orientation="vertical"
+              aria-label="Mobile menu"
+            >
+              <a
+                href="index.html"
+                class="bg-palm-50 border-l-4 border-palm-500 text-palm-700 block pl-3 pr-4 py-2 font-poppins"
+                role="menuitem"
+                aria-current="page"
+                >Home</a
+              >
+              <a
+                href="premium-charcoal-page.html"
+                class="border-transparent text-charcoal-600 hover:bg-clay-100 hover:border-palm-300 border-l-4 block pl-3 pr-4 py-2 font-poppins"
+                role="menuitem"
+                >Products</a
+              >
+              <a
+                href="about.html"
+                class="border-transparent text-charcoal-600 hover:bg-clay-100 hover:border-palm-300 border-l-4 block pl-3 pr-4 py-2 font-poppins"
+                role="menuitem"
+                >About Us</a
+              >
+              <a
+                href="contact.html"
+                class="border-transparent text-charcoal-600 hover:bg-clay-100 hover:border-palm-300 border-l-4 block pl-3 pr-4 py-2 font-poppins"
+                role="menuitem"
+                >Contact</a
+              >
+            </div>
+            <div class="px-4 py-4 border-t border-ash-200">
+              <a href="contact.html">
+                <button
+                  type="button"
+                  class="w-full bg-palm-500 hover:bg-palm-600 text-clay-50 py-2 px-4 rounded-md transition-all duration-300 font-poppins font-medium focus:outline-none focus:ring-2 focus:ring-palm-300 focus:ring-offset-2"
+                  aria-label="Request Quote"
+                >
+                  Request Quote
+                </button>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <!-- Breadcrumbs -->
     <div class="bg-clay-100">
-        <div class="max-w-7xl mx-auto py-3 px-4 sm:px-6 lg:px-8">
-            <nav class="flex" aria-label="Breadcrumb">
-                <ol class="flex items-center space-x-2">
-                    <li>
-                        <div>
-                            <a href="#" class="text-ash-500 hover:text-charcoal-600 transition-colors duration-300 font-poppins text-small">
-                                Home
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="flex items-center">
-                            <svg class="flex-shrink-0 h-5 w-5 text-ash-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
-                            </svg>
-                            <a href="#" class="ml-2 text-ash-500 hover:text-charcoal-600 transition-colors duration-300 font-poppins text-small">
-                                Products
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="flex items-center">
-                            <svg class="flex-shrink-0 h-5 w-5 text-ash-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
-                            </svg>
-                            <span class="ml-2 font-poppins text-small font-medium text-charcoal-700" aria-current="page">
-                                Wholesale Charcoal
-                            </span>
-                        </div>
-                    </li>
-                </ol>
-            </nav>
-        </div>
+      <div class="max-w-7xl mx-auto py-3 px-4 sm:px-6 lg:px-8">
+        <nav class="flex" aria-label="Breadcrumb">
+          <ol class="flex items-center space-x-2">
+            <li>
+              <div>
+                <a
+                  href="#"
+                  class="text-ash-500 hover:text-charcoal-600 transition-colors duration-300 font-poppins text-small"
+                >
+                  Home
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="flex items-center">
+                <svg
+                  class="flex-shrink-0 h-5 w-5 text-ash-400"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <a
+                  href="#"
+                  class="ml-2 text-ash-500 hover:text-charcoal-600 transition-colors duration-300 font-poppins text-small"
+                >
+                  Products
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="flex items-center">
+                <svg
+                  class="flex-shrink-0 h-5 w-5 text-ash-400"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span
+                  class="ml-2 font-poppins text-small font-medium text-charcoal-700"
+                  aria-current="page"
+                >
+                  Wholesale Charcoal
+                </span>
+              </div>
+            </li>
+          </ol>
+        </nav>
+      </div>
     </div>
 
     <main>
-        <!-- Product Detail Section (from organisms/product-detail) -->
-        <section class="py-12 px-4">
-            <div class="max-w-7xl mx-auto">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                    <!-- Image Gallery Column -->
-                    <div>
-                        <!-- Main Product Image -->
-                        <div class="mb-4 bg-clay-100 rounded-lg overflow-hidden">
-                            <img 
-                                src="/img/ala-premium-charcoal-1.jpg" 
-                                alt="Premium Lump Charcoal - Close-up of high-quality charcoal pieces"
-                                class="w-full h-auto object-cover aspect-[4/3]"
-                                loading="lazy"
-                            >
-                        </div>
+      <!-- Product Detail Section (from organisms/product-detail) -->
+      <section class="py-12 px-4">
+        <div class="max-w-7xl mx-auto">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <!-- Image Gallery Column -->
+            <div>
+              <!-- Main Product Image -->
+              <div class="mb-4 bg-clay-100 rounded-lg overflow-hidden">
+                <img
+                  src="/img/ala-premium-charcoal-1.jpg"
+                  alt="Premium Lump Charcoal - Close-up of high-quality charcoal pieces"
+                  class="w-full h-auto object-cover aspect-[4/3]"
+                  loading="lazy"
+                />
+              </div>
 
-                        <!-- Thumbnail Gallery -->
-                        <div class="grid grid-cols-4 gap-2">
-                            <button class="bg-clay-100 rounded overflow-hidden border-2 border-palm-500">
-                                <img 
-                                    src="/img/ala-premium-charcoal-2.jpg" 
-                                    alt="Premium Lump Charcoal - Thumbnail 1"
-                                    class="w-full h-auto aspect-square object-cover"
-                                    loading="lazy"
-                                >
-                            </button>
-                            <button class="bg-clay-100 rounded overflow-hidden">
-                                <img 
-                                    src="/img/ala-premium-charcoal-3.jpg" 
-                                    alt="Premium Lump Charcoal - Thumbnail 2"
-                                    class="w-full h-auto aspect-square object-cover"
-                                    loading="lazy"
-                                >
-                            </button>
-                            <button class="bg-clay-100 rounded overflow-hidden">
-                                <img 
-                                    src="/img/ala-premium-charcoal-4.jpg" 
-                                    alt="Premium Lump Charcoal - Thumbnail 3"
-                                    class="w-full h-auto aspect-square object-cover"
-                                    loading="lazy"
-                                >
-                            </button>
-                            <button class="bg-clay-100 rounded overflow-hidden">
-                                <img 
-                                    src="/img/ala-premium-charcoal-5.jpg" 
-                                    alt="Premium Lump Charcoal - Thumbnail 4"
-                                    class="w-full h-auto aspect-square object-cover"
-                                    loading="lazy"
-                                >
-                            </button>
-                        </div>
-                    </div>
-
-                    <!-- Product Information Column -->
-                    <div>
-                        <!-- Product Badge -->
-                        <div class="mb-2">
-                            <span class="inline-flex items-center bg-savanna-300 text-charcoal-700 px-3 py-1 rounded-full font-poppins text-small font-medium">
-                                Best Seller
-                            </span>
-                        </div>
-
-                        <!-- Product Title -->
-                        <h1 class="font-nohemi font-bold text-h2-desktop text-charcoal-700 mb-4">
-                            Wholesale Charcoal
-                        </h1>
-
-                        <!-- Price (if applicable) -->
-                        <div class="mb-6">
-                            <p class="font-poppins text-h3-desktop font-medium text-charcoal-700">
-                                Request Pricing
-                            </p>
-                            <p class="font-poppins text-small text-ash-500">
-                                Available in 5kg, 10kg, and 20kg packaging
-                            </p>
-                        </div>
-
-                        <!-- Short Description -->
-                        <div class="mb-8">
-                            <p class="font-poppins text-body text-charcoal-600">
-                                Our flagship Premium Lump Charcoal is made from carefully selected hardwood, ensuring the perfect balance of heat, low ash content, and extended burn time. This professional-grade charcoal is ideal for restaurants, catering services, and serious grilling enthusiasts.
-                            </p>
-                        </div>
-
-                        <!-- Specifications -->
-                        <div class="bg-clay-100 rounded-md p-4 mb-8" aria-labelledby="specs-heading">
-                            <h3 id="specs-heading" class="font-poppins font-medium text-small text-charcoal-700 mb-2">
-                                Key Specifications
-                            </h3>
-                            <ul class="space-y-2" aria-label="Premium Lump Charcoal specifications">
-                                <li class="flex justify-between">
-                                    <span class="text-small font-medium text-charcoal-600">Heat Output</span>
-                                    <span class="text-body font-regular text-charcoal-700">7,500 kcal/kg</span>
-                                </li>
-                                <li class="flex justify-between">
-                                    <span class="text-small font-medium text-charcoal-600">Ash Content</span>
-                                    <span class="text-body font-regular text-charcoal-700">&lt;3%</span>
-                                </li>
-                                <li class="flex justify-between">
-                                    <span class="text-small font-medium text-charcoal-600">Moisture</span>
-                                    <span class="text-body font-regular text-charcoal-700">&lt;4%</span>
-                                </li>
-                                <li class="flex justify-between">
-                                    <span class="text-small font-medium text-charcoal-600">Fixed Carbon</span>
-                                    <span class="text-body font-regular text-charcoal-700">&gt;80%</span>
-                                </li>
-                                <li class="flex justify-between">
-                                    <span class="text-small font-medium text-charcoal-600">Burn Time</span>
-                                    <span class="text-body font-regular text-charcoal-700">2-3 hours</span>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <!-- CTA Buttons -->
-                        <div class="flex flex-col sm:flex-row gap-4">
-                            <button 
-                                type="button" 
-                                class="bg-palm-500 hover:bg-palm-600 text-clay-50 py-3 px-6 rounded-md transition-all duration-300 font-poppins font-medium focus:outline-none focus:ring-2 focus:ring-palm-300 focus:ring-offset-2"
-                                aria-label="Request a Quote for Premium Lump Charcoal"
-                            >
-                                Request a Quote
-                            </button>
-                            
-                        </div>
-                    </div>
-                </div>
+              <!-- Thumbnail Gallery -->
+              <div class="grid grid-cols-4 gap-2">
+                <button
+                  class="bg-clay-100 rounded overflow-hidden border-2 border-palm-500"
+                >
+                  <img
+                    src="/img/ala-premium-charcoal-2.jpg"
+                    alt="Premium Lump Charcoal - Thumbnail 1"
+                    class="w-full h-auto aspect-square object-cover"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="bg-clay-100 rounded overflow-hidden">
+                  <img
+                    src="/img/ala-premium-charcoal-3.jpg"
+                    alt="Premium Lump Charcoal - Thumbnail 2"
+                    class="w-full h-auto aspect-square object-cover"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="bg-clay-100 rounded overflow-hidden">
+                  <img
+                    src="/img/ala-premium-charcoal-4.jpg"
+                    alt="Premium Lump Charcoal - Thumbnail 3"
+                    class="w-full h-auto aspect-square object-cover"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="bg-clay-100 rounded overflow-hidden">
+                  <img
+                    src="/img/ala-premium-charcoal-5.jpg"
+                    alt="Premium Lump Charcoal - Thumbnail 4"
+                    class="w-full h-auto aspect-square object-cover"
+                    loading="lazy"
+                  />
+                </button>
+              </div>
             </div>
-        </section>
 
-        <!-- Product Information Tabs Section -->
-        <section class="py-12 px-4 bg-clay-100">
-            <div class="max-w-7xl mx-auto">
-                <!-- Tab Navigation -->
-                <div class="border-b border-ash-200 bg-clay-50">
-                    <nav class="flex flex-wrap md:flex-nowrap space-x-2 md:space-x-8 overflow-x-auto" aria-label="Product information tabs">
-                        <!-- Tab buttons: aria-controls must match tab panel id -->
-                        <button 
-                            class="py-4 px-4 md:px-1 border-b-2 border-palm-500 font-poppins font-medium text-charcoal-700 focus:outline-none whitespace-nowrap" 
-                            aria-current="page"
-                            aria-controls="tab-description"
-                        >
-                            Description
-                        </button>
-                        <button 
-                            class="py-4 px-4 md:px-1 border-b-2 border-transparent hover:border-ash-300 font-poppins font-medium text-ash-500 hover:text-charcoal-600 focus:outline-none focus:text-charcoal-600 focus:border-ash-300 whitespace-nowrap" 
-                            aria-controls="tab-specifications"
-                        >
-                            Detailed Specifications
-                        </button>
-                        <button 
-                            class="py-4 px-4 md:px-1 border-b-2 border-transparent hover:border-ash-300 font-poppins font-medium text-ash-500 hover:text-charcoal-600 focus:outline-none focus:text-charcoal-600 focus:border-ash-300 whitespace-nowrap" 
-                            aria-controls="tab-usage"
-                        >
-                            Usage Guide
-                        </button>
-                        <button 
-                            class="py-4 px-4 md:px-1 border-b-2 border-transparent hover:border-ash-300 font-poppins font-medium text-ash-500 hover:text-charcoal-600 focus:outline-none focus:text-charcoal-600 focus:border-ash-300 whitespace-nowrap" 
-                            aria-controls="tab-sustainability"
-                        >
-                            Sustainability
-                        </button>
-                    </nav>
-                </div>
-                <!-- Tab Content -->
-                <div class="py-8 bg-clay-50 px-6 rounded-b-lg shadow-sm">
-                    <!-- Description Tab -->
-                    <div id="tab-description" role="tabpanel" aria-labelledby="tab-description-button">
-                        <div class="prose max-w-none">
-                            <h2 class="font-nohemi font-bold text-h3-desktop text-charcoal-700 mb-6">Premium Lump Charcoal</h2>
-                            
-                            <p class="font-poppins text-body text-charcoal-600 mb-4">
-                                Àlá Premium Lump Charcoal represents the pinnacle of charcoal production, combining traditional craftsmanship with modern quality control processes. Our artisans carefully select premium hardwoods, which are then kiln-fired using time-honored methods that have been perfected over generations.
-                            </p>
-                            
-                            <p class="font-poppins text-body text-charcoal-600 mb-4">
-                                The result is a high-performance charcoal that burns hotter, cleaner, and longer than conventional products. With its exceptionally low ash production and consistent piece size, our Premium Lump Charcoal delivers reliable results for both commercial kitchens and discerning home grillers.
-                            </p>
+            <!-- Product Information Column -->
+            <div>
+              <!-- Product Badge -->
+              <div class="mb-2">
+                <span
+                  class="inline-flex items-center bg-savanna-300 text-charcoal-700 px-3 py-1 rounded-full font-poppins text-small font-medium"
+                >
+                  Best Seller
+                </span>
+              </div>
 
-                            <h3 class="font-nohemi font-bold text-h4-desktop text-charcoal-700 mt-8 mb-4">Production Process</h3>
-                            
-                            <p class="font-poppins text-body text-charcoal-600 mb-4">
-                                Our charcoal is produced using a carefully controlled process:
-                            </p>
+              <!-- Product Title -->
+              <h1
+                class="font-nohemi font-bold text-h2-desktop text-charcoal-700 mb-4"
+              >
+                Wholesale Charcoal
+              </h1>
 
-                            <ol class="list-decimal pl-5 space-y-2 font-poppins text-body text-charcoal-600 mb-8">
-                                <li>Select hardwoods are harvested from sustainably managed forests</li>
-                                <li>Wood is naturally dried to optimal moisture levels</li>
-                                <li>Traditional kilns are used for slow carbonization at precisely controlled temperatures</li>
-                                <li>Charcoal undergoes rigorous quality control testing</li>
-                                <li>Products are carefully sorted and packaged to minimize breakage</li>
-                            </ol>
-                            
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
-                                <img 
-                                    src="/img/ala-premium-charcoal-3.jpg" 
-                                    alt="Traditional charcoal production process"
-                                    class="w-full h-auto rounded-lg"
-                                    loading="lazy"
-                                >
-                                <div>
-                                    <h4 class="font-nohemi font-bold text-h5-desktop text-charcoal-700 mb-3">Quality Control</h4>
-                                    <p class="font-poppins text-body text-charcoal-600 mb-4">
-                                        Every batch of our Premium Lump Charcoal undergoes thorough testing to ensure it meets our exacting standards for:
-                                    </p>
-                                    <ul class="list-disc pl-5 space-y-2 font-poppins text-body text-charcoal-600">
-                                        <li>Heat output and efficiency</li>
-                                        <li>Ash content and composition</li>
-                                        <li>Moisture levels</li>
-                                        <li>Fixed carbon percentage</li>
-                                        <li>Consistent size distribution</li>
-                                        <li>Absence of contaminants</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Detailed Specifications Tab -->
-                    <div id="tab-specifications" role="tabpanel" aria-labelledby="tab-specifications-button" class="hidden">
-                        <div class="prose max-w-none">
-                            <h2 class="font-nohemi font-bold text-h3-desktop text-charcoal-700 mb-6">Detailed Specifications</h2>
-                            <ul class="list-disc pl-5 font-poppins text-body text-charcoal-600 space-y-2">
-                                <li>Material: 100% natural hardwood (no additives or chemicals)</li>
-                                <li>Piece Size: 5–15 cm (sorted for consistency)</li>
-                                <li>Packaging: Durable, moisture-resistant bags (5kg, 10kg, 20kg)</li>
-                                <li>Burn Characteristics: Low smoke, minimal sparking</li>
-                                <li>Certifications: Sustainably sourced, compliant with export standards</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Usage Guide Tab -->
-                    <div id="tab-usage" role="tabpanel" aria-labelledby="tab-usage-button" class="hidden">
-                        <div class="prose max-w-none">
-                            <h2 class="font-nohemi font-bold text-h3-desktop text-charcoal-700 mb-6">Usage Guide</h2>
-                            <ol class="list-decimal pl-5 font-poppins text-body text-charcoal-600 space-y-2">
-                                <li>Arrange charcoal in a pyramid for easy lighting.</li>
-                                <li>Use natural firelighters or kindling—avoid lighter fluid for best results.</li>
-                                <li>Allow charcoal to ash over before spreading for even heat.</li>
-                                <li>Ideal for grilling, smoking, and open-fire cooking.</li>
-                                <li>Dispose of ashes safely after cooling.</li>
-                            </ol>
-                        </div>
-                    </div>
-                    <!-- Sustainability Tab -->
-                    <div id="tab-sustainability" role="tabpanel" aria-labelledby="tab-sustainability-button" class="hidden">
-                        <div class="prose max-w-none">
-                            <h2 class="font-nohemi font-bold text-h3-desktop text-charcoal-700 mb-6">Sustainability</h2>
-                            <ul class="list-disc pl-5 font-poppins text-body text-charcoal-600 space-y-2">
-                                <li>Sourced from responsibly managed forests with replanting initiatives.</li>
-                                <li>Production process minimizes waste and emissions.</li>
-                                <li>Packaging is recyclable and designed to reduce plastic use.</li>
-                                <li>Supports local communities and fair labor practices.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+              <!-- Price (if applicable) -->
+              <div class="mb-6">
+                <p
+                  class="font-poppins text-h3-desktop font-medium text-charcoal-700"
+                >
+                  Request Pricing
+                </p>
+                <p class="font-poppins text-small text-ash-500">
+                  Available in 5kg, 10kg, and 20kg packaging
+                </p>
+              </div>
+
+              <!-- Short Description -->
+              <div class="mb-8">
+                <p class="font-poppins text-body text-charcoal-600">
+                  Our flagship Premium Lump Charcoal is made from carefully
+                  selected hardwood, ensuring the perfect balance of heat, low
+                  ash content, and extended burn time. This professional-grade
+                  charcoal is ideal for restaurants, catering services, and
+                  serious grilling enthusiasts.
+                </p>
+              </div>
+
+              <!-- Specifications -->
+              <div
+                class="bg-clay-100 rounded-md p-4 mb-8"
+                aria-labelledby="specs-heading"
+              >
+                <h3
+                  id="specs-heading"
+                  class="font-poppins font-medium text-small text-charcoal-700 mb-2"
+                >
+                  Key Specifications
+                </h3>
+                <ul
+                  class="space-y-2"
+                  aria-label="Premium Lump Charcoal specifications"
+                >
+                  <li class="flex justify-between">
+                    <span class="text-small font-medium text-charcoal-600"
+                      >Heat Output</span
+                    >
+                    <span class="text-body font-regular text-charcoal-700"
+                      >7,500 kcal/kg</span
+                    >
+                  </li>
+                  <li class="flex justify-between">
+                    <span class="text-small font-medium text-charcoal-600"
+                      >Ash Content</span
+                    >
+                    <span class="text-body font-regular text-charcoal-700"
+                      >&lt;3%</span
+                    >
+                  </li>
+                  <li class="flex justify-between">
+                    <span class="text-small font-medium text-charcoal-600"
+                      >Moisture</span
+                    >
+                    <span class="text-body font-regular text-charcoal-700"
+                      >&lt;4%</span
+                    >
+                  </li>
+                  <li class="flex justify-between">
+                    <span class="text-small font-medium text-charcoal-600"
+                      >Fixed Carbon</span
+                    >
+                    <span class="text-body font-regular text-charcoal-700"
+                      >&gt;80%</span
+                    >
+                  </li>
+                  <li class="flex justify-between">
+                    <span class="text-small font-medium text-charcoal-600"
+                      >Burn Time</span
+                    >
+                    <span class="text-body font-regular text-charcoal-700"
+                      >2-3 hours</span
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <!-- CTA Buttons -->
+              <div class="flex flex-col sm:flex-row gap-4">
+                <button
+                  type="button"
+                  class="bg-palm-500 hover:bg-palm-600 text-clay-50 py-3 px-6 rounded-md transition-all duration-300 font-poppins font-medium focus:outline-none focus:ring-2 focus:ring-palm-300 focus:ring-offset-2"
+                  aria-label="Request a Quote for Premium Lump Charcoal"
+                >
+                  Request a Quote
+                </button>
+              </div>
             </div>
-        </section>
-        <!-- Lightweight JS for Tabs -->
-        <script>
+          </div>
+        </div>
+      </section>
+
+      <!-- Product Information Tabs Section -->
+      <section class="py-12 px-4 bg-clay-100">
+        <div class="max-w-7xl mx-auto">
+          <!-- Tab Navigation -->
+          <div class="border-b border-ash-200 bg-clay-50">
+            <nav
+              class="flex flex-wrap md:flex-nowrap space-x-2 md:space-x-8 overflow-x-auto"
+              aria-label="Product information tabs"
+            >
+              <!-- Tab buttons: aria-controls must match tab panel id -->
+              <button
+                class="py-4 px-4 md:px-1 border-b-2 border-palm-500 font-poppins font-medium text-charcoal-700 focus:outline-none whitespace-nowrap"
+                aria-current="page"
+                aria-controls="tab-description"
+              >
+                Description
+              </button>
+              <button
+                class="py-4 px-4 md:px-1 border-b-2 border-transparent hover:border-ash-300 font-poppins font-medium text-ash-500 hover:text-charcoal-600 focus:outline-none focus:text-charcoal-600 focus:border-ash-300 whitespace-nowrap"
+                aria-controls="tab-specifications"
+              >
+                Detailed Specifications
+              </button>
+              <button
+                class="py-4 px-4 md:px-1 border-b-2 border-transparent hover:border-ash-300 font-poppins font-medium text-ash-500 hover:text-charcoal-600 focus:outline-none focus:text-charcoal-600 focus:border-ash-300 whitespace-nowrap"
+                aria-controls="tab-usage"
+              >
+                Usage Guide
+              </button>
+              <button
+                class="py-4 px-4 md:px-1 border-b-2 border-transparent hover:border-ash-300 font-poppins font-medium text-ash-500 hover:text-charcoal-600 focus:outline-none focus:text-charcoal-600 focus:border-ash-300 whitespace-nowrap"
+                aria-controls="tab-sustainability"
+              >
+                Sustainability
+              </button>
+            </nav>
+          </div>
+          <!-- Tab Content -->
+          <div class="py-8 bg-clay-50 px-6 rounded-b-lg shadow-sm">
+            <!-- Description Tab -->
+            <div
+              id="tab-description"
+              role="tabpanel"
+              aria-labelledby="tab-description-button"
+            >
+              <div class="prose max-w-none">
+                <h2
+                  class="font-nohemi font-bold text-h3-desktop text-charcoal-700 mb-6"
+                >
+                  Premium Lump Charcoal
+                </h2>
+
+                <p class="font-poppins text-body text-charcoal-600 mb-4">
+                  Àlá Premium Lump Charcoal represents the pinnacle of charcoal
+                  production, combining traditional craftsmanship with modern
+                  quality control processes. Our artisans carefully select
+                  premium hardwoods, which are then kiln-fired using
+                  time-honored methods that have been perfected over
+                  generations.
+                </p>
+
+                <p class="font-poppins text-body text-charcoal-600 mb-4">
+                  The result is a high-performance charcoal that burns hotter,
+                  cleaner, and longer than conventional products. With its
+                  exceptionally low ash production and consistent piece size,
+                  our Premium Lump Charcoal delivers reliable results for both
+                  commercial kitchens and discerning home grillers.
+                </p>
+
+                <h3
+                  class="font-nohemi font-bold text-h4-desktop text-charcoal-700 mt-8 mb-4"
+                >
+                  Production Process
+                </h3>
+
+                <p class="font-poppins text-body text-charcoal-600 mb-4">
+                  Our charcoal is produced using a carefully controlled process:
+                </p>
+
+                <ol
+                  class="list-decimal pl-5 space-y-2 font-poppins text-body text-charcoal-600 mb-8"
+                >
+                  <li>
+                    Select hardwoods are harvested from sustainably managed
+                    forests
+                  </li>
+                  <li>Wood is naturally dried to optimal moisture levels</li>
+                  <li>
+                    Traditional kilns are used for slow carbonization at
+                    precisely controlled temperatures
+                  </li>
+                  <li>Charcoal undergoes rigorous quality control testing</li>
+                  <li>
+                    Products are carefully sorted and packaged to minimize
+                    breakage
+                  </li>
+                </ol>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+                  <img
+                    src="/img/ala-premium-charcoal-3.jpg"
+                    alt="Traditional charcoal production process"
+                    class="w-full h-auto rounded-lg"
+                    loading="lazy"
+                  />
+                  <div>
+                    <h4
+                      class="font-nohemi font-bold text-h5-desktop text-charcoal-700 mb-3"
+                    >
+                      Quality Control
+                    </h4>
+                    <p class="font-poppins text-body text-charcoal-600 mb-4">
+                      Every batch of our Premium Lump Charcoal undergoes
+                      thorough testing to ensure it meets our exacting standards
+                      for:
+                    </p>
+                    <ul
+                      class="list-disc pl-5 space-y-2 font-poppins text-body text-charcoal-600"
+                    >
+                      <li>Heat output and efficiency</li>
+                      <li>Ash content and composition</li>
+                      <li>Moisture levels</li>
+                      <li>Fixed carbon percentage</li>
+                      <li>Consistent size distribution</li>
+                      <li>Absence of contaminants</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Detailed Specifications Tab -->
+            <div
+              id="tab-specifications"
+              role="tabpanel"
+              aria-labelledby="tab-specifications-button"
+              class="hidden"
+            >
+              <div class="prose max-w-none">
+                <h2
+                  class="font-nohemi font-bold text-h3-desktop text-charcoal-700 mb-6"
+                >
+                  Detailed Specifications
+                </h2>
+                <ul
+                  class="list-disc pl-5 font-poppins text-body text-charcoal-600 space-y-2"
+                >
+                  <li>
+                    Material: 100% natural hardwood (no additives or chemicals)
+                  </li>
+                  <li>Piece Size: 5–15 cm (sorted for consistency)</li>
+                  <li>
+                    Packaging: Durable, moisture-resistant bags (5kg, 10kg,
+                    20kg)
+                  </li>
+                  <li>Burn Characteristics: Low smoke, minimal sparking</li>
+                  <li>
+                    Certifications: Sustainably sourced, compliant with export
+                    standards
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Usage Guide Tab -->
+            <div
+              id="tab-usage"
+              role="tabpanel"
+              aria-labelledby="tab-usage-button"
+              class="hidden"
+            >
+              <div class="prose max-w-none">
+                <h2
+                  class="font-nohemi font-bold text-h3-desktop text-charcoal-700 mb-6"
+                >
+                  Usage Guide
+                </h2>
+                <ol
+                  class="list-decimal pl-5 font-poppins text-body text-charcoal-600 space-y-2"
+                >
+                  <li>Arrange charcoal in a pyramid for easy lighting.</li>
+                  <li>
+                    Use natural firelighters or kindling—avoid lighter fluid for
+                    best results.
+                  </li>
+                  <li>
+                    Allow charcoal to ash over before spreading for even heat.
+                  </li>
+                  <li>Ideal for grilling, smoking, and open-fire cooking.</li>
+                  <li>Dispose of ashes safely after cooling.</li>
+                </ol>
+              </div>
+            </div>
+            <!-- Sustainability Tab -->
+            <div
+              id="tab-sustainability"
+              role="tabpanel"
+              aria-labelledby="tab-sustainability-button"
+              class="hidden"
+            >
+              <div class="prose max-w-none">
+                <h2
+                  class="font-nohemi font-bold text-h3-desktop text-charcoal-700 mb-6"
+                >
+                  Sustainability
+                </h2>
+                <ul
+                  class="list-disc pl-5 font-poppins text-body text-charcoal-600 space-y-2"
+                >
+                  <li>
+                    Sourced from responsibly managed forests with replanting
+                    initiatives.
+                  </li>
+                  <li>Production process minimizes waste and emissions.</li>
+                  <li>
+                    Packaging is recyclable and designed to reduce plastic use.
+                  </li>
+                  <li>Supports local communities and fair labor practices.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Lightweight JS for Tabs -->
+      <script>
         // Product Information Tabs: Lightweight JS implementation
-        document.addEventListener('DOMContentLoaded', function() {
-            // Select all tab buttons inside the tab nav
-            const tabButtons = document.querySelectorAll('[aria-controls^="tab-"]');
-            // Select all tab panels
-            const tabPanels = document.querySelectorAll('[role="tabpanel"]');
+        document.addEventListener("DOMContentLoaded", function () {
+          // Select all tab buttons inside the tab nav
+          const tabButtons = document.querySelectorAll(
+            '[aria-controls^="tab-"]'
+          );
+          // Select all tab panels
+          const tabPanels = document.querySelectorAll('[role="tabpanel"]');
 
-            tabButtons.forEach(button => {
-                button.addEventListener('click', function() {
-                    // Hide all tab panels
-                    tabPanels.forEach(panel => panel.classList.add('hidden'));
-                    // Remove active styles from all buttons
-                    tabButtons.forEach(btn => {
-                        btn.classList.remove('border-palm-500', 'text-charcoal-700');
-                        btn.classList.add('border-transparent', 'text-ash-500', 'hover:border-ash-300', 'hover:text-charcoal-600');
-                        btn.setAttribute('aria-current', 'false');
-                    });
-                    // Show the selected tab panel
-                    const tabId = this.getAttribute('aria-controls');
-                    document.getElementById(tabId).classList.remove('hidden');
-                    // Add active styles to the clicked button
-                    this.classList.add('border-palm-500', 'text-charcoal-700');
-                    this.classList.remove('border-transparent', 'text-ash-500', 'hover:border-ash-300', 'hover:text-charcoal-600');
-                    this.setAttribute('aria-current', 'page');
-                });
+          tabButtons.forEach((button) => {
+            button.addEventListener("click", function () {
+              // Hide all tab panels
+              tabPanels.forEach((panel) => panel.classList.add("hidden"));
+              // Remove active styles from all buttons
+              tabButtons.forEach((btn) => {
+                btn.classList.remove("border-palm-500", "text-charcoal-700");
+                btn.classList.add(
+                  "border-transparent",
+                  "text-ash-500",
+                  "hover:border-ash-300",
+                  "hover:text-charcoal-600"
+                );
+                btn.setAttribute("aria-current", "false");
+              });
+              // Show the selected tab panel
+              const tabId = this.getAttribute("aria-controls");
+              document.getElementById(tabId).classList.remove("hidden");
+              // Add active styles to the clicked button
+              this.classList.add("border-palm-500", "text-charcoal-700");
+              this.classList.remove(
+                "border-transparent",
+                "text-ash-500",
+                "hover:border-ash-300",
+                "hover:text-charcoal-600"
+              );
+              this.setAttribute("aria-current", "page");
             });
+          });
         });
-        </script>
+      </script>
     </main>
 
-     <!-- Footer Component -->
-     <footer class="bg-charcoal-800 text-clay-100 py-16">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <!-- Main Footer Content -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-                <!-- Company Info -->
-                <div>
-                    <img src="/img/logo-ala-horizontal-light.svg" alt="Àlá Premium Charcoal" class="h-10 mb-6">
-                    <p class="font-poppins text-ash-300 mb-4">
-                        Premium quality, sustainably sourced charcoal for professional and home use.
-                    </p>
-                    <div class="flex space-x-4">
-                        <a href="#" class="text-clay-300 hover:text-clay-100 transition-colors duration-300">
-                            <span class="sr-only">Facebook</span>
-                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
-                            </svg>
-                        </a>
-                        <a href="#" class="text-clay-300 hover:text-clay-100 transition-colors duration-300">
-                            <span class="sr-only">Instagram</span>
-                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" />
-                            </svg>
-                        </a>
-                        <a href="#" class="text-clay-300 hover:text-clay-100 transition-colors duration-300">
-                            <span class="sr-only">Twitter</span>
-                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- Quick Links -->
-                <div>
-                    <h3 class="font-nohemi font-bold text-clay-50 mb-4">Products</h3>
-                    <ul class="space-y-2 font-poppins">
-                        <li><a href="premium-charcoal-page.html" class="text-ash-300 hover:text-clay-100 transition-colors duration-300">Wholesale Charcoal</a></li>
-                        <li><a href="#" class="text-ash-300 hover:text-clay-100 transition-colors duration-300">Bulk Ordering</a></li>
-                    </ul>
-                </div>
-                
-                <!-- More Links -->
-                <div>
-                    <h3 class="font-nohemi font-bold text-clay-50 mb-4">Company</h3>
-                    <ul class="space-y-2 font-poppins">
-                        <li><a href="#" class="text-ash-300 hover:text-clay-100 transition-colors duration-300">About Us</a></li>
-                        <li><a href="#" class="text-ash-300 hover:text-clay-100 transition-colors duration-300">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <!-- Contact -->
-                <div>
-                    <h3 class="font-nohemi font-bold text-clay-50 mb-4">Contact</h3>
-                    <address class="font-poppins text-ash-300 not-italic">
-                        <p class="mb-2">1234 Forest Way</p>
-                        <p class="mb-2">Lagos, Nigeria</p>
-                        <p class="mb-4">info@alapremiumcharcoal.com</p>
-                        <p>+234 123 456 7890</p>
-                    </address>
-                </div>
-            </div>
-            
-            <!-- Copyright and Legal -->
-            <div class="border-t border-charcoal-700 pt-8 flex flex-col md:flex-row justify-between items-center">
-                <p class="font-poppins text-ash-400 text-sm mb-4 md:mb-0">
-                    © 2025 Àlá Premium Charcoal. All rights reserved.
-                </p>
-                <div class="flex space-x-6 font-poppins text-sm">
-                    
-                    <a href="#" class="text-ash-400 hover:text-clay-100 transition-colors duration-300">Terms of Service</a>
-                </div>
-                <div class="sm:mt-8">
-                    <a href="https://festa.design/" target="_index" class="ml-0 md:ml-8 font-poppins text-ash-400 hover:text-clay-100 text-xs transition-colors duration-300 whitespace-nowrap">
-                        Website designed by Festa Design Studio.
-                    </a>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <!-- Footer Component -->
+    <footer class="bg-charcoal-800 text-clay-100 py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Main Footer Content -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          <!-- Company Info -->
+          <div>
+            <img
+              src="/img/logo-ala-horizontal.svg"
+              alt="Àlá Premium Charcoal"
+              class="h-10 mb-6"
+            />
+            <p class="font-poppins text-ash-300 mb-4">
+              Premium quality, sustainably sourced charcoal for professional and
+              home use.
+            </p>
+          </div>
 
+          <!-- Quick Links -->
+          <div>
+            <h3 class="font-nohemi font-bold text-clay-50 mb-4">Products</h3>
+            <ul class="space-y-2 font-poppins">
+              <li>
+                <a
+                  href="#"
+                  class="text-ash-300 hover:text-clay-100 transition-colors duration-300"
+                  >Premium Lump Charcoal</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- More Links -->
+          <div>
+            <h3 class="font-nohemi font-bold text-clay-50 mb-4">Company</h3>
+            <ul class="space-y-2 font-poppins">
+              <li>
+                <a
+                  href="#"
+                  class="text-ash-300 hover:text-clay-100 transition-colors duration-300"
+                  >About Us</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+          <div>
+            <h3 class="font-nohemi font-bold text-clay-50 mb-4">Contact</h3>
+            <address class="font-poppins text-ash-300 not-italic">
+              <p class="mb-2">1234 Forest Way</p>
+              <p class="mb-2">Lagos, Nigeria</p>
+              <p class="mb-4">info@alapremiumcharcoal.com</p>
+              <p>+234 123 456 7890</p>
+            </address>
+          </div>
+        </div>
+
+        <!-- Copyright and Legal -->
+        <div
+          class="border-t border-charcoal-700 pt-8 flex flex-col md:flex-row justify-between items-center"
+        >
+          <p class="font-poppins text-ash-400 text-sm mb-4 md:mb-0">
+            © 2025 Àlá Premium Charcoal. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
     <script>
-        // This is a minimal JavaScript example that could be expanded for actual usage
-        document.addEventListener('DOMContentLoaded', function() {
-            // Mobile menu toggle button (demonstration only)
-            const mobileMenuButton = document.querySelector('button[aria-controls="mobile-menu"]');
-            const mobileMenu = document.getElementById('mobile-menu');
-            
-            if (mobileMenuButton && mobileMenu) {
-                mobileMenuButton.addEventListener('click', function() {
-                    const expanded = this.getAttribute('aria-expanded') === 'true';
-                    this.setAttribute('aria-expanded', !expanded);
-                    mobileMenu.classList.toggle('hidden');
-                });
-            }
-            
-            // Products dropdown toggle (demonstration only)
-            const productsDropdownButton = document.querySelector('button[aria-controls="products-menu"]');
-            const productsMenu = document.getElementById('products-menu');
-            
-            if (productsDropdownButton && productsMenu) {
-                productsDropdownButton.addEventListener('click', function() {
-                    const expanded = this.getAttribute('aria-expanded') === 'true';
-                    this.setAttribute('aria-expanded', !expanded);
-                    productsMenu.classList.toggle('hidden');
-                });
-            }
-        });
+      // This is a minimal JavaScript example that could be expanded for actual usage
+      document.addEventListener("DOMContentLoaded", function () {
+        // Mobile menu toggle button (demonstration only)
+        const mobileMenuButton = document.querySelector(
+          'button[aria-controls="mobile-menu"]'
+        );
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        if (mobileMenuButton && mobileMenu) {
+          mobileMenuButton.addEventListener("click", function () {
+            const expanded = this.getAttribute("aria-expanded") === "true";
+            this.setAttribute("aria-expanded", !expanded);
+            mobileMenu.classList.toggle("hidden");
+          });
+        }
+
+        // Products dropdown toggle (demonstration only)
+        const productsDropdownButton = document.querySelector(
+          'button[aria-controls="products-menu"]'
+        );
+        const productsMenu = document.getElementById("products-menu");
+
+        if (productsDropdownButton && productsMenu) {
+          productsDropdownButton.addEventListener("click", function () {
+            const expanded = this.getAttribute("aria-expanded") === "true";
+            this.setAttribute("aria-expanded", !expanded);
+            productsMenu.classList.toggle("hidden");
+          });
+        }
+      });
     </script>
 
     <script>
-        // This is a minimal JavaScript example that could be expanded for actual usage
-        document.addEventListener('DOMContentLoaded', function() {
-            // Tab functionality
-            const tabButtons = document.querySelectorAll('[aria-controls]');
-            
-            tabButtons.forEach(button => {
-                button.addEventListener('click', function() {
-                    // Skip if this is a mobile menu button, not a tab button
-                    if (this.getAttribute('aria-controls') === 'mobile-menu') return;
-                    
-                    const tabId = this.getAttribute('aria-controls');
-                    const tabPanel = document.getElementById(tabId);
-                    
-                    // Hide all tab panels
-                    document.querySelectorAll('[role="tabpanel"]').forEach(panel => {
-                        panel.classList.add('hidden');
-                    });
-                    
-                    // Show the selected tab panel
-                    if (tabPanel) {
-                        tabPanel.classList.remove('hidden');
-                    }
-                    
-                    // Update tab button styles
-                    tabButtons.forEach(btn => {
-                        // Skip mobile menu button
-                        if (btn.getAttribute('aria-controls') === 'mobile-menu') return;
-                        
-                        btn.classList.remove('border-palm-500', 'text-charcoal-700');
-                        btn.classList.add('border-transparent', 'text-ash-500', 'hover:border-ash-300', 'hover:text-charcoal-600');
-                        btn.setAttribute('aria-current', 'false');
-                    });
-                    
-                    this.classList.add('border-palm-500', 'text-charcoal-700');
-                    this.classList.remove('border-transparent', 'text-ash-500', 'hover:border-ash-300', 'hover:text-charcoal-600');
-                    this.setAttribute('aria-current', 'page');
-                });
+      // This is a minimal JavaScript example that could be expanded for actual usage
+      document.addEventListener("DOMContentLoaded", function () {
+        // Tab functionality
+        const tabButtons = document.querySelectorAll("[aria-controls]");
+
+        tabButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            // Skip if this is a mobile menu button, not a tab button
+            if (this.getAttribute("aria-controls") === "mobile-menu") return;
+
+            const tabId = this.getAttribute("aria-controls");
+            const tabPanel = document.getElementById(tabId);
+
+            // Hide all tab panels
+            document.querySelectorAll('[role="tabpanel"]').forEach((panel) => {
+              panel.classList.add("hidden");
             });
 
-            // Mobile menu toggle
-            const mobileMenuButton = document.querySelector('button[aria-controls="mobile-menu"]');
-            
-            if (mobileMenuButton) {
-                mobileMenuButton.addEventListener('click', function() {
-                    // Mobile menu toggle functionality would be implemented here
-                    const expanded = this.getAttribute('aria-expanded') === 'true';
-                    this.setAttribute('aria-expanded', !expanded);
-                    
-                    // In a real implementation, this would toggle the mobile menu visibility
-                    console.log('Mobile menu toggle clicked');
-                });
+            // Show the selected tab panel
+            if (tabPanel) {
+              tabPanel.classList.remove("hidden");
             }
+
+            // Update tab button styles
+            tabButtons.forEach((btn) => {
+              // Skip mobile menu button
+              if (btn.getAttribute("aria-controls") === "mobile-menu") return;
+
+              btn.classList.remove("border-palm-500", "text-charcoal-700");
+              btn.classList.add(
+                "border-transparent",
+                "text-ash-500",
+                "hover:border-ash-300",
+                "hover:text-charcoal-600"
+              );
+              btn.setAttribute("aria-current", "false");
+            });
+
+            this.classList.add("border-palm-500", "text-charcoal-700");
+            this.classList.remove(
+              "border-transparent",
+              "text-ash-500",
+              "hover:border-ash-300",
+              "hover:text-charcoal-600"
+            );
+            this.setAttribute("aria-current", "page");
+          });
         });
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector(
+          'button[aria-controls="mobile-menu"]'
+        );
+
+        if (mobileMenuButton) {
+          mobileMenuButton.addEventListener("click", function () {
+            // Mobile menu toggle functionality would be implemented here
+            const expanded = this.getAttribute("aria-expanded") === "true";
+            this.setAttribute("aria-expanded", !expanded);
+
+            // In a real implementation, this would toggle the mobile menu visibility
+            console.log("Mobile menu toggle clicked");
+          });
+        }
+      });
     </script>
-</body>
+  </body>
 </html>

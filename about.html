@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Àlá Premium Charcoal - About Us</title>
+    <link href="../../../dist/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-clay-50">
+    <!-- Navigation Header Component -->
+    <header class="bg-clay-50 border-b border-ash-200 sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto">
+        <!-- Desktop Navigation -->
+        <nav
+          class="hidden md:flex items-center justify-between py-4 px-6"
+          aria-label="Main Navigation"
+        >
+          <!-- Logo -->
+          <div>
+            <a
+              href="index.html"
+              class="block"
+              aria-label="Àlá Premium Charcoal - Home"
+            >
+              <img
+                src="../../../img/logo-ala-horizontal.svg"
+                alt="Àlá Premium Charcoal"
+                class="h-10"
+              />
+            </a>
+          </div>
+
+          <!-- Menu Items -->
+          <div class="flex space-x-8" role="menubar" aria-label="Main Menu">
+            <a
+              href="index.html"
+              class="font-poppins font-medium text-charcoal-600 hover:text-palm-500 transition-colors duration-300 border-b-2 border-palm-500"
+              role="menuitem"
+              aria-current="page"
+              >Home</a
+            >
+            <a
+              href="premium-charcoal-page.html"
+              class="font-poppins font-medium text-charcoal-600 hover:text-palm-500 transition-colors duration-300 border-b-2 border-transparent hover:border-palm-300"
+              role="menuitem"
+              >Products</a
+            >
+            <a
+              href="about.html"
+              class="font-poppins font-medium text-charcoal-600 hover:text-palm-500 transition-colors duration-300 border-b-2 border-transparent hover:border-palm-300"
+              role="menuitem"
+              >About Us</a
+            >
+            <a
+              href="contact.html"
+              class="font-poppins font-medium text-charcoal-600 hover:text-palm-500 transition-colors duration-300 border-b-2 border-transparent hover:border-palm-300"
+              role="menuitem"
+              >Contact</a
+            >
+          </div>
+
+          <!-- CTA Button -->
+          <div>
+            <a href="contact.html">
+              <button
+                type="button"
+                class="bg-palm-500 hover:bg-palm-600 text-clay-50 py-2 px-4 rounded-md transition-all duration-300 font-poppins font-medium focus:outline-none focus:ring-2 focus:ring-palm-300 focus:ring-offset-2"
+                aria-label="Request Quote"
+              >
+                Request Quote
+              </button>
+            </a>
+          </div>
+        </nav>
+
+        <!-- Mobile Navigation -->
+        <nav class="md:hidden" aria-label="Mobile Navigation">
+          <div class="flex items-center justify-between py-4 px-4">
+            <!-- Logo -->
+            <div>
+              <a
+                href="index.html"
+                class="block"
+                aria-label="Àlá Premium Charcoal - Home"
+              >
+                <img
+                  src="../../../img/logo-ala-horizontal.svg"
+                  alt="Àlá Premium Charcoal"
+                  class="h-8"
+                />
+              </a>
+            </div>
+
+            <!-- Menu Button (would need JavaScript to toggle menu) -->
+            <button
+              type="button"
+              class="text-charcoal-700 hover:text-palm-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-palm-500 p-2"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+              aria-label="Open main menu"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <!-- Mobile Menu (hidden by default, would be shown via JavaScript) -->
+          <div
+            id="mobile-menu"
+            class="hidden bg-clay-50 shadow-lg border-t border-ash-200"
+          >
+            <div
+              class="px-2 pt-2 pb-3 space-y-1"
+              role="menu"
+              aria-orientation="vertical"
+              aria-label="Mobile menu"
+            >
+              <a
+                href="index.html"
+                class="bg-palm-50 border-l-4 border-palm-500 text-palm-700 block pl-3 pr-4 py-2 font-poppins"
+                role="menuitem"
+                aria-current="page"
+                >Home</a
+              >
+              <a
+                href="premium-charcoal-page.html"
+                class="border-transparent text-charcoal-600 hover:bg-clay-100 hover:border-palm-300 border-l-4 block pl-3 pr-4 py-2 font-poppins"
+                role="menuitem"
+                >Products</a
+              >
+              <a
+                href="about.html"
+                class="border-transparent text-charcoal-600 hover:bg-clay-100 hover:border-palm-300 border-l-4 block pl-3 pr-4 py-2 font-poppins"
+                role="menuitem"
+                >About Us</a
+              >
+              <a
+                href="contact.html"
+                class="border-transparent text-charcoal-600 hover:bg-clay-100 hover:border-palm-300 border-l-4 block pl-3 pr-4 py-2 font-poppins"
+                role="menuitem"
+                >Contact</a
+              >
+            </div>
+            <div class="px-4 py-4 border-t border-ash-200">
+              <a href="contact.html">
+                <button
+                type="button"
+                class="w-full bg-palm-500 hover:bg-palm-600 text-clay-50 py-2 px-4 rounded-md transition-all duration-300 font-poppins font-medium focus:outline-none focus:ring-2 focus:ring-palm-300 focus:ring-offset-2"
+                aria-label="Request Quote"
+              >
+                Request Quote
+              </button>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative bg-charcoal-800 text-clay-50 overflow-hidden">
+            <div class="absolute inset-0 z-10 bg-gradient-to-r from-charcoal-900/70 to-charcoal-800/60"></div>
+            <div class="absolute inset-0 z-0">
+                <img 
+                    src="https://images.unsplash.com/photo-1501084291732-13b1ba8f0ebc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" 
+                    alt="Traditional charcoal production" 
+                    class="w-full h-full object-cover"
+                    loading="eager"
+                >
+            </div>
+            
+            <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
+                <div class="max-w-3xl">
+                    <span class="inline-block py-1 px-3 bg-palm-500/80 backdrop-blur-sm text-clay-50 rounded-md font-poppins font-medium text-sm mb-6">Our Story</span>
+                    <h1 class="font-nohemi font-bold text-h1-mobile md:text-h1-tablet lg:text-h1-desktop mb-6">
+                        About Àlá Premium Charcoal
+                    </h1>
+                    <p class="font-poppins text-xl text-clay-100 mb-8">
+                        Founded on traditional African knowledge and a commitment to sustainability, we're redefining premium charcoal for the modern world.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+       
+
+        <!-- Our Values Section -->
+        <section class="py-24 bg-clay-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <span class="inline-block font-poppins font-medium text-palm-600 mb-3">What Drives Us</span>
+                    <h2 class="font-nohemi font-bold text-h2-mobile md:text-h2-desktop text-charcoal-700 mb-4">
+                        Our Core Values
+                    </h2>
+                    <p class="font-poppins text-lg text-charcoal-600 max-w-3xl mx-auto">
+                        These principles guide everything we do, from sourcing raw materials to delivering our products.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Value 1 -->
+                    <div class="bg-white p-8 rounded-xl shadow-sm">
+                        <div class="h-14 w-14 bg-palm-100 rounded-lg flex items-center justify-center mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-palm-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                            </svg>
+                        </div>
+                        <h3 class="font-nohemi font-bold text-xl text-charcoal-700 mb-4">Traditional Excellence</h3>
+                        <p class="font-poppins text-charcoal-600">
+                            We honor and preserve generations of traditional African charcoal-making expertise, recognizing the value of time-tested methods that create superior products.
+                        </p>
+                    </div>
+                    
+                    <!-- Value 2 -->
+                    <div class="bg-white p-8 rounded-xl shadow-sm">
+                        <div class="h-14 w-14 bg-savanna-100 rounded-lg flex items-center justify-center mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-savanna-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="font-nohemi font-bold text-xl text-charcoal-700 mb-4">Environmental Stewardship</h3>
+                        <p class="font-poppins text-charcoal-600">
+                            We're committed to sustainable forestry practices, carbon neutrality, and minimizing our environmental footprint across all aspects of our business.
+                        </p>
+                    </div>
+                    
+                    <!-- Value 3 -->
+                    <div class="bg-white p-8 rounded-xl shadow-sm">
+                        <div class="h-14 w-14 bg-kola-100 rounded-lg flex items-center justify-center mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-kola-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="font-nohemi font-bold text-xl text-charcoal-700 mb-4">Community Support</h3>
+                        <p class="font-poppins text-charcoal-600">
+                            We invest in the communities where we operate, providing fair wages, education, and infrastructure to support local economic development.
+                        </p>
+                    </div>
+                    
+                    <!-- Value 4 -->
+                    <div class="bg-white p-8 rounded-xl shadow-sm">
+                        <div class="h-14 w-14 bg-palm-100 rounded-lg flex items-center justify-center mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-palm-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                            </svg>
+                        </div>
+                        <h3 class="font-nohemi font-bold text-xl text-charcoal-700 mb-4">Quality Assurance</h3>
+                        <p class="font-poppins text-charcoal-600">
+                            We maintain rigorous quality standards throughout our production process, ensuring every bag of charcoal meets our premium specifications.
+                        </p>
+                    </div>
+                    
+                    <!-- Value 5 -->
+                    <div class="bg-white p-8 rounded-xl shadow-sm">
+                        <div class="h-14 w-14 bg-savanna-100 rounded-lg flex items-center justify-center mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-savanna-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z" />
+                            </svg>
+                        </div>
+                        <h3 class="font-nohemi font-bold text-xl text-charcoal-700 mb-4">Innovation</h3>
+                        <p class="font-poppins text-charcoal-600">
+                            We blend traditional knowledge with modern research to continuously improve our products and develop new, sustainable charcoal solutions.
+                        </p>
+                    </div>
+                    
+                    <!-- Value 6 -->
+                    <div class="bg-white p-8 rounded-xl shadow-sm">
+                        <div class="h-14 w-14 bg-kola-100 rounded-lg flex items-center justify-center mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-kola-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="font-nohemi font-bold text-xl text-charcoal-700 mb-4">Cultural Preservation</h3>
+                        <p class="font-poppins text-charcoal-600">
+                            We celebrate and share the rich cultural heritage of traditional African charcoal-making with the world, preserving these skills for future generations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <!-- Our Process Section -->
+        <section class="py-24 bg-clay-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <span class="inline-block font-poppins font-medium text-palm-600 mb-3">How We Work</span>
+                    <h2 class="font-nohemi font-bold text-h2-mobile md:text-h2-desktop text-charcoal-700 mb-4">
+                        Our Production Process
+                    </h2>
+                    <p class="font-poppins text-lg text-charcoal-600 max-w-3xl mx-auto">
+                        Discover how we blend traditional methods with sustainable practices to create our premium charcoal.
+                    </p>
+                </div>
+                
+                <!-- Process Steps -->
+                <div class="relative">
+                    <!-- Timeline Line -->
+                    <div class="hidden md:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-ash-300 transform -translate-x-1/2"></div>
+                    
+                    <div class="space-y-16">
+                        <!-- Process Step 1 -->
+                        <div class="relative">
+                            <div class="flex flex-col md:flex-row items-center">
+                                <div class="flex-1 md:pr-8 md:text-right order-2 md:order-1">
+                                    <div class="bg-white p-6 rounded-xl shadow-sm md:mr-8">
+                                        <h3 class="font-nohemi font-bold text-xl text-charcoal-700 mb-3">Sustainable Wood Selection</h3>
+                                        <p class="font-poppins text-charcoal-600">
+                                            We carefully select hardwoods from responsibly managed forests, focusing on species that produce the best charcoal while ensuring minimal environmental impact.
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <div class="h-12 w-12 bg-palm-500 rounded-full flex items-center justify-center mb-4 md:mb-0 z-10 order-1 md:order-2">
+                                    <span class="font-nohemi font-bold text-lg text-clay-50">1</span>
+                                </div>
+                                
+                                <div class="flex-1 md:pl-8 order-3">
+                                    <div class="hidden md:block h-full"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Process Step 2 -->
+                        <div class="relative">
+                            <div class="flex flex-col md:flex-row items-center">
+                                <div class="flex-1 md:pr-8 order-2 md:order-1">
+                                    <div class="hidden md:block h-full"></div>
+                                </div>
+                                
+                                <div class="h-12 w-12 bg-palm-500 rounded-full flex items-center justify-center mb-4 md:mb-0 z-10 order-1 md:order-2">
+                                    <span class="font-nohemi font-bold text-lg text-clay-50">2</span>
+                                </div>
+                                
+                                <div class="flex-1 md:pl-8 order-3">
+                                    <div class="bg-white p-6 rounded-xl shadow-sm md:ml-8">
+                                        <h3 class="font-nohemi font-bold text-xl text-charcoal-700 mb-3">Traditional Kiln Construction</h3>
+                                        <p class="font-poppins text-charcoal-600">
+                                            Our artisans build earth kilns using traditional methods, carefully arranging wood to ensure optimal carbonization while minimizing smoke and emissions.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Process Step 3 -->
+                        <div class="relative">
+                            <div class="flex flex-col md:flex-row items-center">
+                                <div class="flex-1 md:pr-8 md:text-right order-2 md:order-1">
+                                    <div class="bg-white p-6 rounded-xl shadow-sm md:mr-8">
+                                        <h3 class="font-nohemi font-bold text-xl text-charcoal-700 mb-3">Slow Carbonization</h3>
+                                        <p class="font-poppins text-charcoal-600">
+                                            The controlled slow-burning process can take up to a week, allowing for complete carbonization while preserving the natural structure of the wood.
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <div class="h-12 w-12 bg-palm-500 rounded-full flex items-center justify-center mb-4 md:mb-0 z-10 order-1 md:order-2">
+                                    <span class="font-nohemi font-bold text-lg text-clay-50">3</span>
+                                </div>
+                                
+                                <div class="flex-1 md:pl-8 order-3">
+                                    <div class="hidden md:block h-full"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Process Step 4 -->
+                        <div class="relative">
+                            <div class="flex flex-col md:flex-row items-center">
+                                <div class="flex-1 md:pr-8 order-2 md:order-1">
+                                    <div class="hidden md:block h-full"></div>
+                                </div>
+                                
+                                <div class="h-12 w-12 bg-palm-500 rounded-full flex items-center justify-center mb-4 md:mb-0 z-10 order-1 md:order-2">
+                                    <span class="font-nohemi font-bold text-lg text-clay-50">4</span>
+                                </div>
+                                
+                                <div class="flex-1 md:pl-8 order-3">
+                                    <div class="bg-white p-6 rounded-xl shadow-sm md:ml-8">
+                                        <h3 class="font-nohemi font-bold text-xl text-charcoal-700 mb-3">Quality Selection</h3>
+                                        <p class="font-poppins text-charcoal-600">
+                                            Each piece of charcoal is inspected for quality, ensuring it meets our standards for density, purity, and burn characteristics.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Process Step 5 -->
+                        <div class="relative">
+                            <div class="flex flex-col md:flex-row items-center">
+                                <div class="flex-1 md:pr-8 md:text-right order-2 md:order-1">
+                                    <div class="bg-white p-6 rounded-xl shadow-sm md:mr-8">
+                                        <h3 class="font-nohemi font-bold text-xl text-charcoal-700 mb-3">Eco-Friendly Packaging</h3>
+                                        <p class="font-poppins text-charcoal-600">
+                                            Our products are packaged in recycled and biodegradable materials, completing our commitment to sustainability from forest to consumer.
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <div class="h-12 w-12 bg-palm-500 rounded-full flex items-center justify-center mb-4 md:mb-0 z-10 order-1 md:order-2">
+                                    <span class="font-nohemi font-bold text-lg text-clay-50">5</span>
+                                </div>
+                                
+                                <div class="flex-1 md:pl-8 order-3">
+                                    <div class="hidden md:block h-full"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    
+
+        <!-- CTA Section -->
+        <section class="py-16 bg-gradient-to-r from-palm-600 to-kola-600 text-clay-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"></div>
+                <div class="max-w-3xl mx-auto text-center">
+                    <h2 class="font-nohemi font-bold text-h3-mobile md:text-h3-desktop mb-4">
+                        Join the Àlá Family
+                    </h2>
+                    <p class="font-poppins text-clay-100 mb-8">
+                        Whether you're a professional chef or a home cooking enthusiast, discover the difference that premium, sustainably-produced charcoal can make.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="premium-charcoal-page.html" class="bg-clay-50 hover:bg-clay-100 text-palm-700 font-poppins font-medium px-8 py-3 rounded-md transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-clay-50 focus:ring-offset-2 focus:ring-offset-palm-600">
+                            Explore Our Products
+                        </a>
+                        <a href="contact.html" class="border border-clay-50 text-clay-50 hover:bg-white/10 font-poppins font-medium px-8 py-3 rounded-md transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-clay-50 focus:ring-offset-2 focus:ring-offset-palm-600">
+                            Contact Us
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Component -->
+    <footer class="bg-charcoal-800 text-clay-100 py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Main Footer Content -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          <!-- Company Info -->
+          <div>
+            <img
+              src="/img/logo-ala-horizontal.svg"
+              alt="Àlá Premium Charcoal"
+              class="h-10 mb-6"
+            />
+            <p class="font-poppins text-ash-300 mb-4">
+              Premium quality, sustainably sourced charcoal for professional and
+              home use.
+            </p>
+          </div>
+
+          <!-- Quick Links -->
+          <div>
+            <h3 class="font-nohemi font-bold text-clay-50 mb-4">Products</h3>
+            <ul class="space-y-2 font-poppins">
+              <li>
+                <a
+                  href="#"
+                  class="text-ash-300 hover:text-clay-100 transition-colors duration-300"
+                  >Premium Lump Charcoal</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- More Links -->
+          <div>
+            <h3 class="font-nohemi font-bold text-clay-50 mb-4">Company</h3>
+            <ul class="space-y-2 font-poppins">
+              <li>
+                <a
+                  href="#"
+                  class="text-ash-300 hover:text-clay-100 transition-colors duration-300"
+                  >About Us</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+          <div>
+            <h3 class="font-nohemi font-bold text-clay-50 mb-4">Contact</h3>
+            <address class="font-poppins text-ash-300 not-italic">
+              <p class="mb-2">1234 Forest Way</p>
+              <p class="mb-2">Lagos, Nigeria</p>
+              <p class="mb-4">info@alapremiumcharcoal.com</p>
+              <p>+234 123 456 7890</p>
+            </address>
+          </div>
+        </div>
+
+        <!-- Copyright and Legal -->
+        <div
+          class="border-t border-charcoal-700 pt-8 flex flex-col md:flex-row justify-between items-center"
+        >
+          <p class="font-poppins text-ash-400 text-sm mb-4 md:mb-0">
+            © 2025 Àlá Premium Charcoal. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+        // This is a minimal JavaScript example that could be expanded for actual usage
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile menu toggle button (demonstration only)
+            const mobileMenuButton = document.querySelector('button[aria-controls="mobile-menu"]');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', function() {
+                    const expanded = this.getAttribute('aria-expanded') === 'true';
+                    this.setAttribute('aria-expanded', !expanded);
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+            
+            // Products dropdown toggle (demonstration only)
+            const productsDropdownButton = document.querySelector('button[aria-controls="products-menu"]');
+            const productsMenu = document.getElementById('products-menu');
+            
+            if (productsDropdownButton && productsMenu) {
+                productsDropdownButton.addEventListener('click', function() {
+                    const expanded = this.getAttribute('aria-expanded') === 'true';
+                    this.setAttribute('aria-expanded', !expanded);
+                    productsMenu.classList.toggle('hidden');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
