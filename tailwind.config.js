@@ -1,8 +1,19 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme');
+const forms = require('@tailwindcss/forms');
+
 module.exports = {
   content: [
     "./**/*.{html,js}",
-    "./components/**/*.html"
+    "./components/**/*.html",
+    // Add Blade/Laravel paths only if you use Laravel
+    //'./vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
+    //'./storage/framework/views/*.php',
+    //'./resources/views/**/*.blade.php',
+    //'./resources/js/**/*.js',
+  ],
+  safelist: [
+    '[x-cloak]'
   ],
   theme: {
     extend: {
@@ -109,19 +120,16 @@ module.exports = {
         'h2-desktop': ['36px', { lineHeight: '44px', letterSpacing: '-0.02em' }],
         'h3-desktop': ['24px', { lineHeight: '32px', letterSpacing: '-0.02em' }],
         'h4-desktop': ['20px', { lineHeight: '28px', letterSpacing: '-0.02em' }],
-        
         // Tablet
         'h1-tablet': ['40px', { lineHeight: '48px', letterSpacing: '-0.02em' }],
         'h2-tablet': ['32px', { lineHeight: '40px', letterSpacing: '-0.02em' }],
         'h3-tablet': ['22px', { lineHeight: '30px', letterSpacing: '-0.02em' }],
         'h4-tablet': ['18px', { lineHeight: '26px', letterSpacing: '-0.02em' }],
-        
         // Mobile
         'h1-mobile': ['32px', { lineHeight: '40px', letterSpacing: '-0.02em' }],
         'h2-mobile': ['28px', { lineHeight: '36px', letterSpacing: '-0.02em' }],
         'h3-mobile': ['20px', { lineHeight: '28px', letterSpacing: '-0.02em' }],
         'h4-mobile': ['18px', { lineHeight: '24px', letterSpacing: '-0.02em' }],
-        
         // Body text
         'body': ['16px', { lineHeight: '24px', letterSpacing: '0' }],
         'small': ['14px', { lineHeight: '20px', letterSpacing: '0' }],
@@ -135,5 +143,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [forms],
 }
